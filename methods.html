@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Methods · WayLight Companion</title>
+  <link rel="stylesheet" href="assets/wlc.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body class="pt-console-shell wl-sticky-shell" data-theme="parchment">
+  <div class="pt-shell">
+    <header class="pt-shell-header">
+      <button class="pt-back-btn" onclick="window.location.href='waylight.html'" aria-label="Back to WayLight" style="margin-right:1rem;min-width:44px;min-height:44px;font-size:1.5rem;border-radius:50%;border:1px solid var(--rule);background:#fff;color:var(--ink);cursor:pointer;">←</button>
+      <div class="pt-shell-title-block">
+        <h1 class="pt-shell-title">Methods</h1>
+        <p class="pt-shell-subtitle">Life · Agile · Kaizen · Lean · Benedictine.</p>
+      </div>
+      <div class="pt-shell-status" aria-label="Settings">
+        <label class="sr-only" for="themeToggle">Theme</label>
+        <select id="themeToggle" class="pt-status-pill" aria-label="Theme">
+          <option value="atlantic">Atlantic Navy</option>
+          <option value="deepsea">Deep Sea</option>
+          <option value="seagreen">Sea Green</option>
+          <option value="bottle">Bottle Green</option>
+          <option value="parchment">Parchment</option>
+        </select>
+        <label class="sr-only" for="langToggle">Language</label>
+        <select id="langToggle" class="pt-status-pill" aria-label="Language">
+          <option value="en">English</option>
+          <option value="ga">Gaeilge</option>
+        </select>
+      </div>
+    </header>
+    <main class="pt-shell-main">
+      <div class="pt-bakelite-divider" style="margin-bottom:2rem;"></div>
+      <section>
+        <p>Welcome to the Methods section.</p>
+      </section>
+    </main>
+    <footer class="pt-footer">
+      <div class="pt-footer-accent"></div>
+      <div class="pt-footer-shell">
+        <p class="pt-footer-text">
+          The WayLight Companion &middot; Private Utility &middot; v0.1 &middot; from the
+          <a href="https://www.waylight-atlantic.co.uk" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">WayLight Atlantic Family</a>
+        </p>
+        <div class="pt-console-clock" aria-label="Time and date">
+          <span id="pt-clock-time">--:--</span>
+          <span id="pt-clock-date">Loading…</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="assets/wlc.js"></script>
+</body>
+</html>

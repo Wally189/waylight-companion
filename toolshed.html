@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The WayLight Companion · Tool Shed</title>
+  <link rel="stylesheet" href="assets/wlc.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body class="pt-console-shell wl-sticky-shell" data-theme="parchment">
+  <div class="pt-shell">
+    <header class="pt-shell-header">
+      <button class="pt-back-btn" onclick="window.location.href='waylight.html'" aria-label="Back to WayLight" style="margin-right:1rem;min-width:44px;min-height:44px;font-size:1.5rem;border-radius:50%;border:1px solid var(--rule);background:#fff;color:var(--ink);cursor:pointer;">←</button>
+      <div class="pt-shell-title-block">
+        <h1 class="pt-shell-title">WayLight Tool Shed</h1>
+        <p class="pt-shell-subtitle">Quick access deck for your everyday apps</p>
+      </div>
+      <div class="pt-shell-status" aria-label="Settings">
+        <label class="sr-only" for="themeToggle">Theme</label>
+        <select id="themeToggle" class="pt-status-pill" aria-label="Theme">
+          <option value="atlantic">Atlantic Navy</option>
+          <option value="deepsea">Deep Sea</option>
+          <option value="seagreen">Sea Green</option>
+          <option value="bottle">Bottle Green</option>
+          <option value="parchment">Parchment</option>
+        </select>
+        <label class="sr-only" for="langToggle">Language</label>
+        <select id="langToggle" class="pt-status-pill" aria-label="Language">
+          <option value="en">English</option>
+          <option value="ga">Gaeilge</option>
+        </select>
+      </div>
+    </header>
+    <main class="pt-shell-main pt-tools-main">
+      <!-- MICROSOFT -->
+      <section class="pt-tools-row" draggable="true">
+        <button class="pt-drag-handle" type="button" aria-label="Drag row">☰</button>
+        <div class="pt-tools-row-header">
+          <h2>Microsoft</h2>
+          <p>Work, files and productivity</p>
+        </div>
+        <div class="pt-tools-chips">
+          <button class="pt-tool-pill" data-tool-key="ms-outlook">Outlook</button>
+          <button class="pt-tool-pill" data-tool-key="ms-word">Word</button>
+          <button class="pt-tool-pill" data-tool-key="ms-excel">Excel</button>
+          <button class="pt-tool-pill" data-tool-key="ms-powerpoint">PowerPoint</button>
+          <button class="pt-tool-pill" data-tool-key="ms-onedrive">OneDrive</button>
+          <button class="pt-tool-pill" data-tool-key="ms-teams">Teams</button>
+          <button class="pt-tool-pill" data-tool-key="ms-todo">To&nbsp;Do</button>
+          <button class="pt-add-link-row-btn" type="button" data-row="ms">＋ Add link</button>
+        </div>
+        <div class="pt-bakelite-divider"></div>
+      </section>
+      <!-- GOOGLE -->
+      <section class="pt-tools-row" draggable="true">
+        <button class="pt-drag-handle" type="button" aria-label="Drag row">☰</button>
+        <div class="pt-tools-row-header">
+          <h2>Google</h2>
+          <p>Search, maps and cloud tools</p>
+        </div>
+        <div class="pt-tools-chips">
+          <button class="pt-tool-pill" data-tool-key="google-gmail">Gmail</button>
+          <button class="pt-tool-pill" data-tool-key="google-drive">Drive</button>
+          <button class="pt-tool-pill" data-tool-key="google-docs">Docs</button>
+          <button class="pt-tool-pill" data-tool-key="google-sheets">Sheets</button>
+          <button class="pt-tool-pill" data-tool-key="google-calendar">Calendar</button>
+          <button class="pt-tool-pill" data-tool-key="google-maps">Maps</button>
+          <button class="pt-tool-pill" data-tool-key="google-youtube">YouTube</button>
+          <button class="pt-tool-pill" data-tool-key="google-home">Google&nbsp;Home</button>
+          <button class="pt-add-link-row-btn" type="button" data-row="google">＋ Add link</button>
+        </div>
+        <div class="pt-bakelite-divider"></div>
+      </section>
+      <!-- WORK & NHS -->
+      <section class="pt-tools-row" draggable="true">
+        <button class="pt-drag-handle" type="button" aria-label="Drag row">☰</button>
+        <div class="pt-tools-row-header">
+          <h2>Work &amp; NHS</h2>
+          <p>NBT, IPC/TV and professional tools</p>
+        </div>
+        <div class="pt-tools-chips">
+          <button class="pt-tool-pill" data-tool-key="work-nhsapp">NHS App</button>
+          <button class="pt-tool-pill" data-tool-key="work-folder">Work (folder)</button>
+          <button class="pt-tool-pill" data-tool-key="work-notion">Notion</button>
+          <button class="pt-tool-pill" data-tool-key="work-teams">Teams (Work)</button>
+          <button class="pt-tool-pill" data-tool-key="work-email">Email (Work)</button>
+          <button class="pt-tool-pill" data-tool-key="work-onedrive">OneDrive (Work)</button>
+          <button class="pt-tool-pill" data-tool-key="work-librarieswest">LibrariesWest</button>
+          <button class="pt-tool-pill" style="visibility:hidden;"> </button>
+          <button class="pt-add-link-row-btn" type="button" data-row="work">＋ Add link</button>
+        </div>
+        <div class="pt-bakelite-divider"></div>
+      </section>
+      <!-- COMMUNICATION & SOCIAL -->
+      <section class="pt-tools-row" draggable="true">
+        <button class="pt-drag-handle" type="button" aria-label="Drag row">☰</button>
+        <div class="pt-tools-row-header">
+          <h2>Communication &amp; Social</h2>
+          <p>People, messages and chat</p>
+        </div>
+        <div class="pt-tools-chips">
+          <button class="pt-tool-pill" data-tool-key="comm-phone">Phone</button>
+          <button class="pt-tool-pill" data-tool-key="comm-contacts">Contacts</button>
+          <button class="pt-tool-pill" data-tool-key="comm-whatsapp">WhatsApp</button>
+          <button class="pt-tool-pill" data-tool-key="comm-messenger">Messenger</button>
+          <button class="pt-tool-pill" data-tool-key="comm-discord">Discord</button>
+          <button class="pt-tool-pill" data-tool-key="comm-facebook">Facebook</button>
+          <button class="pt-tool-pill" data-tool-key="comm-chatgpt">ChatGPT</button>
+          <button class="pt-add-link-row-btn" type="button" data-row="comm">＋ Add link</button>
+        </div>
+        <div class="pt-bakelite-divider"></div>
+      </section>
+      <!-- FINANCE & BILLS -->
+      <section class="pt-tools-row" draggable="true">
+        <button class="pt-drag-handle" type="button" aria-label="Drag row">☰</button>
+        <div class="pt-tools-row-header">
+          <h2>Finance &amp; Bills</h2>
+          <p>Money, accounts and utilities</p>
+        </div>
+        <div class="pt-tools-chips">
+          <button class="pt-tool-pill" data-tool-key="fin-banking">Banking (folder)</button>
+          <button class="pt-tool-pill" data-tool-key="fin-bills">Bills (folder)</button>
+          <button class="pt-tool-pill" data-tool-key="fin-tescomobile">Tesco&nbsp;Mobile</button>
+          <button class="pt-tool-pill" data-tool-key="fin-wallet">Wallet</button>
+          <button class="pt-tool-pill" data-tool-key="fin-pay-expenses">Pay &amp; Expenses</button>
+          <button class="pt-tool-pill" style="visibility:hidden;"> </button>
+          <button class="pt-tool-pill" style="visibility:hidden;"> </button>
+          <button class="pt-add-link-row-btn" type="button" data-row="fin">＋ Add link</button>
+        </div>
+        <div class="pt-bakelite-divider"></div>
+      </section>
+      <!-- TRAVEL & OUT-AND-ABOUT -->
+      <section class="pt-tools-row" draggable="true">
+        <button class="pt-drag-handle" type="button" aria-label="Drag row">☰</button>
+        <div class="pt-tools-row-header">
+          <h2>Travel &amp; Out-and-About</h2>
+          <p>Getting there, food and errands</p>
+        </div>
+        <div class="pt-tools-chips">
+          <button class="pt-tool-pill" data-tool-key="travel-folder">Travel (folder)</button>
+          <button class="pt-tool-pill" data-tool-key="travel-deliveroo">Deliveroo</button>
+          <button class="pt-tool-pill" data-tool-key="travel-uber">Uber / Taxis</button>
+          <button class="pt-tool-pill" data-tool-key="travel-maps">Maps</button>
+          <button class="pt-tool-pill" style="visibility:hidden;"> </button>
+          <button class="pt-tool-pill" style="visibility:hidden;"> </button>
+          <button class="pt-tool-pill" style="visibility:hidden;"> </button>
+          <button class="pt-add-link-row-btn" type="button" data-row="travel">＋ Add link</button>
+        </div>
+        <div class="pt-bakelite-divider"></div>
+      </section>
+      <!-- MEDIA & LIFE -->
+      <section class="pt-tools-row" draggable="true">
+        <button class="pt-drag-handle" type="button" aria-label="Drag row">☰</button>
+        <div class="pt-tools-row-header">
+          <h2>Media &amp; Everyday Life</h2>
+          <p>Photos, camera, reading and play</p>
+        </div>
+        <div class="pt-tools-chips">
+          <button class="pt-tool-pill" data-tool-key="life-camera">Camera</button>
+          <button class="pt-tool-pill" data-tool-key="life-gallery">Gallery</button>
+          <button class="pt-tool-pill" data-tool-key="life-calendar">Calendar</button>
+          <button class="pt-tool-pill" data-tool-key="life-clock">Clock</button>
+          <button class="pt-tool-pill" data-tool-key="life-scrabble">Scrabble&nbsp;GO</button>
+          <button class="pt-tool-pill" data-tool-key="life-librarieswest">LibrariesWest</button>
+          <button class="pt-tool-pill" style="visibility:hidden;"> </button>
+          <button class="pt-add-link-row-btn" type="button" data-row="life">＋ Add link</button>
+        </div>
+        <div class="pt-bakelite-divider"></div>
+      </section>
+      <!-- SYSTEM & DEVICE -->
+      <section class="pt-tools-row" draggable="true">
+        <button class="pt-drag-handle" type="button" aria-label="Drag row">☰</button>
+        <div class="pt-tools-row-header">
+          <h2>System &amp; Device</h2>
+          <p>Keeping the phone running smoothly</p>
+        </div>
+        <div class="pt-tools-chips">
+          <button class="pt-tool-pill" data-tool-key="sys-settings">Settings</button>
+          <button class="pt-tool-pill" data-tool-key="sys-devicecare">Device care</button>
+          <button class="pt-tool-pill" data-tool-key="sys-msdefender">MS&nbsp;Defender</button>
+          <button class="pt-tool-pill" data-tool-key="sys-dolbyon">Dolby&nbsp;On</button>
+          <button class="pt-tool-pill" data-tool-key="sys-samsung-folder">Samsung (folder)</button>
+          <button class="pt-tool-pill" data-tool-key="sys-playstore">Play&nbsp;Store</button>
+          <button class="pt-tool-pill" data-tool-key="sys-calculator">Calculator</button>
+          <button class="pt-add-link-row-btn" type="button" data-row="sys">＋ Add link</button>
+        </div>
+      </section>
+    </main>
+    <footer class="pt-footer">
+      <div class="pt-footer-accent"></div>
+      <div class="pt-footer-shell">
+        <p class="pt-footer-text">
+          The WayLight Companion &middot; Private Utility &middot; v0.1 &middot; from the 
+          <a href="https://www.waylight-atlantic.co.uk" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">WayLight Atlantic Family</a>
+        </p>
+        <div class="pt-console-clock" aria-label="Time and date">
+          <span id="pt-clock-time">--:--</span>
+          <span id="pt-clock-date">Loading…</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- Modal for add/remove links (copied from waylight.html) -->
+  <div id="wl-modal" class="wl-modal hidden" aria-hidden="true">
+    <div class="wl-modal-panel" role="dialog" aria-modal="true" aria-labelledby="wl-modal-title">
+      <div class="wl-modal-head">
+        <h2 id="wl-modal-title" class="wl-modal-title">Panel</h2>
+        <button id="wl-modal-close" class="wl-modal-close" type="button" aria-label="Close">×</button>
+      </div>
+      <p id="wl-modal-desc" class="wl-modal-desc"></p>
+      <div class="wl-links">
+        <div class="wl-links-row">
+          <button id="wl-add-link" class="pt-lock-button" type="button">Add link</button>
+          <button id="wl-clear-links" class="pt-lock-button" type="button">Clear</button>
+        </div>
+        <ul id="wl-links-list" class="wl-links-list"></ul>
+      </div>
+    </div>
+  </div>
+  <script src="assets/wlc.js"></script>
+  <script>
+    // Drag and drop for tool rows
+    document.addEventListener('DOMContentLoaded', function() {
+      const container = document.querySelector('.pt-shell-main');
+      let draggingElem = null;
+      let placeholder = document.createElement('div');
+      placeholder.className = 'pt-tools-row-placeholder';
+      placeholder.style.height = '4px';
+      placeholder.style.background = 'var(--brass)';
+      placeholder.style.margin = '0.5rem 0';
+      function onDragStart(e) {
+        draggingElem = e.currentTarget;
+        e.dataTransfer.effectAllowed = 'move';
+        e.dataTransfer.setData('text/plain', '');
+        draggingElem.classList.add('dragging');
+      }
+      function onDragEnd(e) {
+        draggingElem.classList.remove('dragging');
+        placeholder.remove();
+        draggingElem = null;
+      }
+      function onDragOver(e) {
+        e.preventDefault();
+        const target = e.currentTarget;
+        if (target === draggingElem) return;
+        const rect = target.getBoundingClientRect();
+        const offset = e.clientY - rect.top;
+        if (offset < rect.height / 2) {
+          target.parentNode.insertBefore(placeholder, target);
+        } else {
+          target.parentNode.insertBefore(placeholder, target.nextSibling);
+        }
+      }
+      function onDrop(e) {
+        e.preventDefault();
+        if (!draggingElem) return;
+        if (placeholder.parentNode) {
+          placeholder.parentNode.insertBefore(draggingElem, placeholder);
+          placeholder.remove();
+        }
+      }
+      document.querySelectorAll('.pt-tools-row').forEach(row => {
+        row.addEventListener('dragstart', onDragStart);
+        row.addEventListener('dragend', onDragEnd);
+        row.addEventListener('dragover', onDragOver);
+        row.addEventListener('drop', onDrop);
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!--JMJ-->
+<!--
+Ecc 3:1 (Gaeilge): "Tá a thráth féin ag gach rud, agus a am féin ag gach gnó faoin spéir."
+Ár nAthair atá ar neamh, go naofar d’ainm...
+Sé do bheatha, a Mhuire, atá lán de ghrásta...
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The WayLight Companion</title>
+
+  <link rel="stylesheet" href="assets/wlc.css" />
+
+  <!-- Utility-era fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+
+<body class="waylight-utility" data-theme="parchment">
+
+  <!-- HEADER (matches console header style) -->
+  <header class="pt-shell-header pt-home-header">
+    <div class="pt-shell-title-block">
+      <h1 class="pt-shell-title">The WayLight Companion</h1>
+      <p class="pt-shell-subtitle">A quiet utility for life, work, and order</p>
+    </div>
+
+    <div class="pt-shell-status" aria-label="Settings">
+      <label class="sr-only" for="themeToggle">Theme</label>
+      <select id="themeToggle" class="pt-status-pill" aria-label="Theme">
+        <option value="atlantic">Atlantic Navy</option>
+        <option value="deepsea">Deep Sea</option>
+        <option value="seagreen">Sea Green</option>
+        <option value="bottle">Bottle Green</option>
+        <option value="parchment">Parchment</option>
+      </select>
+
+      <label class="sr-only" for="langToggle">Language</label>
+      <select id="langToggle" class="pt-status-pill" aria-label="Language">
+        <option value="en">English</option>
+        <option value="ga">Gaeilge</option>
+      </select>
+    </div>
+  </header>
+
+  <!-- MAIN (fit-to-screen, poster centred, no giant scrolling) -->
+  <main class="pt-home-stage" role="main">
+    <section class="pt-home-split" aria-label="Welcome">
+
+      <figure class="wl-hero" aria-label="WayLight poster">
+        <!-- Put the image here: assets/img/waylight-poster.png -->
+        <img class="wl-hero-image" src="assets/images/waylightireland.png" alt="WayLight vintage poster" />
+      </figure>
+
+      <section class="pt-home-section">
+        <p class="pt-home-lead">
+          Personal · Work · Civic · Creative · Systems
+          <br />
+          A unified method for steady thinking and decent work.
+        </p>
+
+        <button id="pt-enter-btn" class="pt-home-enter" type="button">
+          Enter Companion
+        </button>
+      </section>
+
+    </section>
+  </main>
+
+  <!-- ACCESS PANEL -->
+  <div id="pt-lock" class="pt-lock-overlay hidden" aria-hidden="true">
+    <div class="pt-lock-panel" role="dialog" aria-modal="true" aria-labelledby="pt-lock-title">
+      <h2 id="pt-lock-title" class="pt-lock-title">Access Required</h2>
+      <p class="pt-lock-text">Enter your access code to open the WayLight Companion.</p>
+
+      <form id="pt-lock-form" class="pt-lock-form">
+        <label for="pt-pass" class="pt-lock-label">Access code</label>
+        <input id="pt-pass" class="pt-lock-input" type="password" autocomplete="off" />
+
+        <p id="pt-lock-error" class="pt-lock-error" aria-live="polite"></p>
+
+        <button type="submit" class="pt-lock-button">Unlock</button>
+      </form>
+
+      <p class="pt-lock-note">Private system · Alan Gallagher</p>
+    </div>
+  </div>
+
+  <!-- FOOTER + CLOCK -->
+  <footer class="pt-footer">
+  <div class="pt-footer-accent"></div>
+  <div class="pt-footer-shell">
+    <p class="pt-footer-text">
+      The WayLight Companion &middot; Private Utility &middot; v0.1 &middot; from the 
+      <a href="https://www.waylight-atlantic.co.uk" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">WayLight Atlantic Family</a>
+    </p>
+    <div class="pt-console-clock" aria-label="Time and date">
+      <span id="pt-clock-time">--:--</span>
+      <span id="pt-clock-date">Loading…</span>
+    </div>
+  </div>
+</footer>
+
+  <script src="assets/wlc.js"></script>
+</body>
+</html>

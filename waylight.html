@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The WayLight Companion · Console</title>
+
+  <!--
+    Ecc 3:1 (Gaeilge): "Tá a thráth féin ag gach rud, agus a am féin ag gach gnó faoin spéir."
+    Ár nAthair atá ar neamh, go naofar d’ainm...
+    Sé do bheatha, a Mhuire, atá lán de ghrásta...
+  -->
+
+  <link rel="stylesheet" href="assets/wlc.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+
+<body class="pt-console-shell wl-sticky-shell" data-theme="parchment">
+
+  <div class="pt-shell">
+
+    <header class="pt-shell-header">
+      <button class="pt-back-btn" onclick="window.location.href='index.html'" aria-label="Back to login" style="margin-right:1rem;min-width:44px;min-height:44px;font-size:1.5rem;border-radius:50%;border:1px solid var(--rule);background:#fff;color:var(--ink);cursor:pointer;">←</button>
+      <div class="pt-shell-title-block">
+        <h1 class="pt-shell-title">The WayLight Companion</h1>
+        <p class="pt-shell-subtitle">Personal · Work · Civic · Creative · Systems</p>
+      </div>
+
+      <div class="pt-shell-status" aria-label="Settings">
+        <label class="sr-only" for="themeToggle">Theme</label>
+        <select id="themeToggle" class="pt-status-pill" aria-label="Theme">
+          <option value="atlantic">Atlantic Navy</option>
+          <option value="deepsea">Deep Sea</option>
+          <option value="seagreen">Sea Green</option>
+          <option value="bottle">Bottle Green</option>
+          <option value="parchment">Parchment</option>
+        </select>
+
+        <label class="sr-only" for="langToggle">Language</label>
+        <select id="langToggle" class="pt-status-pill" aria-label="Language">
+          <option value="en">English</option>
+          <option value="ga">Gaeilge</option>
+        </select>
+      </div>
+    </header>
+
+    <main class="pt-shell-main">
+      <div class="pt-bakelite-divider" style="margin-bottom:2rem;"></div>
+      <section id="pt-card-grid" class="pt-card-grid" aria-label="WayLight panels">
+        <article class="pt-card" draggable="true">
+          <h2 class="pt-card-title" data-i18n="phil_title">Philosophy and Religion</h2>
+          <p class="pt-card-text" data-i18n="phil_desc">Faith, ethics, formation, prayer, and first principles.</p>
+          <a class="pt-card-open" href="philosophy.html">Open Philosophy &amp; Religion</a>
+        </article>
+
+        <article class="pt-card" draggable="true">
+          <h2 class="pt-card-title" data-i18n="personal_title">Personal</h2>
+          <p class="pt-card-text" data-i18n="personal_desc">Administration, health, home, prayer, routines.</p>
+          <a class="pt-card-open" href="personal.html">Open Personal</a>
+        </article>
+        <article class="pt-card" draggable="true">
+          <h2 class="pt-card-title" data-i18n="work_title">Work</h2>
+          <p class="pt-card-text" data-i18n="work_desc">NHS, Digital, Private.</p>
+          <a class="pt-card-open" href="work.html">Open Work</a>
+        </article>
+        <article class="pt-card" draggable="true">
+          <h2 class="pt-card-title" data-i18n="civic_title">Civic</h2>
+          <p class="pt-card-text" data-i18n="civic_desc">WayLight Commonwealth, local missions, public-square work.</p>
+          <a class="pt-card-open" href="civic.html">Open Civic</a>
+        </article>
+        <article class="pt-card" draggable="true">
+          <h2 class="pt-card-title" data-i18n="creative_title">Creative</h2>
+          <p class="pt-card-text" data-i18n="creative_desc">Writing, music, design, websites, experiments, videos and TV.</p>
+          <a class="pt-card-open" href="creative.html">Open Creative</a>
+        </article>
+        <article class="pt-card" draggable="true">
+          <h2 class="pt-card-title" data-i18n="systems_title">Systems Centre</h2>
+          <p class="pt-card-text" data-i18n="systems_desc">WayLight systems, data, backups, devices, finances.</p>
+          <a class="pt-card-open" href="systems.html">Open Systems</a>
+        </article>
+        <article class="pt-card" draggable="true">
+          <h2 class="pt-card-title" data-i18n="calendar_title">Calendar</h2>
+          <p class="pt-card-text" data-i18n="calendar_desc">Link to master diary.</p>
+          <a class="pt-card-open" href="calendar.html">Open Calendar</a>
+        </article>
+        <article class="pt-card" draggable="true">
+          <h2 class="pt-card-title" data-i18n="tools_title">Tool Shed</h2>
+          <p class="pt-card-text" data-i18n="tools_desc">MS / Google / coding / messaging / banking / news.</p>
+          <a class="pt-card-open" href="toolshed.html">Open Tools</a>
+        </article>
+        <article class="pt-card" draggable="true">
+          <h2 class="pt-card-title" data-i18n="waylight_title">WayLight</h2>
+          <p class="pt-card-text" data-i18n="waylight_desc">Pipeline · Pending Board · Missions.</p>
+          <a class="pt-card-open" href="waylight-section.html">Open WayLight</a>
+        </article>
+        <article class="pt-card" draggable="true">
+          <h2 class="pt-card-title" data-i18n="methods_title">Methods</h2>
+          <p class="pt-card-text" data-i18n="methods_desc">Life · Agile · Kaizen · Lean · Benedictine.</p>
+          <a class="pt-card-open" href="methods.html">Open Methods</a>
+        </article>
+
+      </section>
+    </main>
+
+    <footer class="pt-footer">
+  <div class="pt-footer-accent"></div>
+  <div class="pt-footer-shell">
+    <p class="pt-footer-text">
+      The WayLight Companion &middot; Private Utility &middot; v0.1 &middot; from the 
+      <a href="https://www.waylight-atlantic.co.uk" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">WayLight Atlantic Family</a>
+    </p>
+    <div class="pt-console-clock" aria-label="Time and date">
+      <span id="pt-clock-time">--:--</span>
+      <span id="pt-clock-date">Loading…</span>
+    </div>
+  </div>
+</footer>
+
+
+  </div>
+
+  <div id="wl-modal" class="wl-modal hidden" aria-hidden="true">
+    <div class="wl-modal-panel" role="dialog" aria-modal="true" aria-labelledby="wl-modal-title">
+      <div class="wl-modal-head">
+        <h2 id="wl-modal-title" class="wl-modal-title">Panel</h2>
+        <button id="wl-modal-close" class="wl-modal-close" type="button" aria-label="Close">×</button>
+      </div>
+
+      <p id="wl-modal-desc" class="wl-modal-desc"></p>
+
+      <div class="wl-links">
+        <div class="wl-links-row">
+          <button id="wl-add-link" class="pt-lock-button" type="button">Add link</button>
+          <button id="wl-clear-links" class="pt-lock-button" type="button">Clear</button>
+        </div>
+        <ul id="wl-links-list" class="wl-links-list"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/wlc.js"></script>
+  <script>
+    // Drag and drop for pt-card-grid
+    document.addEventListener('DOMContentLoaded', function() {
+      const grid = document.getElementById('pt-card-grid');
+      let draggingElem = null;
+      let placeholder = document.createElement('div');
+      placeholder.className = 'pt-card-placeholder';
+      placeholder.style.height = '230px';
+      placeholder.style.background = 'var(--parchment)';
+      placeholder.style.border = '2px dashed var(--brass)';
+      placeholder.style.borderRadius = '18px';
+      placeholder.style.margin = '0.25rem 0';
+
+      function onDragStart(e) {
+        draggingElem = e.currentTarget;
+        e.dataTransfer.effectAllowed = 'move';
+        e.dataTransfer.setData('text/plain', '');
+        draggingElem.classList.add('dragging');
+      }
+      function onDragEnd(e) {
+        draggingElem.classList.remove('dragging');
+        placeholder.remove();
+        draggingElem = null;
+      }
+      function onDragOver(e) {
+        e.preventDefault();
+        const target = e.currentTarget;
+        if (target === draggingElem) return;
+        const rect = target.getBoundingClientRect();
+        const offset = e.clientY - rect.top;
+        if (offset < rect.height / 2) {
+          target.parentNode.insertBefore(placeholder, target);
+        } else {
+          target.parentNode.insertBefore(placeholder, target.nextSibling);
+        }
+      }
+      function onDrop(e) {
+        e.preventDefault();
+        if (!draggingElem) return;
+        if (placeholder.parentNode) {
+          placeholder.parentNode.insertBefore(draggingElem, placeholder);
+          placeholder.remove();
+        }
+      }
+      grid.querySelectorAll('.pt-card').forEach(card => {
+        card.addEventListener('dragstart', onDragStart);
+        card.addEventListener('dragend', onDragEnd);
+        card.addEventListener('dragover', onDragOver);
+        card.addEventListener('drop', onDrop);
+      });
+      // Allow dropping on the grid itself (for last position)
+      grid.addEventListener('dragover', function(e) {
+        e.preventDefault();
+        if (!draggingElem) return;
+        if (e.target === grid) {
+          grid.appendChild(placeholder);
+        }
+      });
+      grid.addEventListener('drop', function(e) {
+        e.preventDefault();
+        if (!draggingElem) return;
+        if (placeholder.parentNode) {
+          placeholder.parentNode.insertBefore(draggingElem, placeholder);
+          placeholder.remove();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
