@@ -27,7 +27,7 @@ This is a **private utility** created by Alan Gallagher as part of the "WayLight
 ### Core Features
 
 1. **Access Control**
-   - Password-protected entry (access code: "WAYLIGHT")
+   - Password-protected entry (hardcoded in JavaScript)
    - Landing page with authentication overlay
    - Session-based access to main console
 
@@ -214,7 +214,7 @@ The system organizes life into **5 primary domains** plus supporting areas:
 ### First-Time Access
 1. Open `index.html` in a web browser
 2. Click "Enter Companion" button
-3. Enter access code: `WAYLIGHT`
+3. Enter the access code (found in the source code)
 4. Main console opens automatically
 
 ### Navigation
@@ -232,9 +232,10 @@ The system organizes life into **5 primary domains** plus supporting areas:
 ## 🔐 Security Notes
 
 - **Client-Side Only**: No server-side components or external APIs
-- **Hardcoded Password**: Access code is in plain text in JavaScript (line 8 of wlc.js)
+- **Hardcoded Password**: Access code is stored in plain text in the JavaScript source code
 - **LocalStorage Data**: All user data stored in browser (cleared if cache cleared)
 - **Private Use**: Designed for personal/private deployment, not public hosting
+- **No Server-Side Security**: The password protection is cosmetic only; anyone with access to the source code can view the access code
 
 ## 📱 Responsive Design
 
