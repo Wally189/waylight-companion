@@ -1,0 +1,17 @@
+:root {
+  --wl-accent: #b08a4a;
+  --wl-accent-soft: rgba(176, 138, 74, 0.12);
+  --navy: #1e3446;
+  --deepsea: #0f2b33;
+  --seagreen: #355f56;
+  --bottle: #1f3b2d;
+  --parchment: var(--wl-paper);
+  --ink: var(--wl-ink);
+  --ink-soft: var(--wl-muted);
+  --brass: var(--wl-accent);
+  --rule: var(--wl-rule);
+  --bg: var(--wl-paper);
+  --panel-bg: #ffffff;
+  --btn-bg: #ffffff;
+  --btn-ink: var(--wl-ink);
+}

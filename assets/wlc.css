@@ -62,78 +62,45 @@
   min-height: 100vh;
   display: grid;
   grid-template-rows: 1fr auto;
-  background: var(--bg);
+  background: transparent;
 }
-:root{
-  --navy:#1e3446;
-  --deepsea:#0f2b33;
-  --seagreen:#355f56;
-  --bottle:#1f3b2d;
-  --parchment:#f3efe4;
-
-  --ink:#1c1f22;
-  --ink-soft:#4a4f54;
-
-  --brass:#b39a5f;
-  --rule:#c8c3b8;
-
-  --bg:var(--parchment);
-  --panel-bg:#ffffff;
-
-  --btn-bg:#ffffff;
-  --btn-ink:#1c1f22;
-}
-
-/* ======================================================
-   BASE
-====================================================== */
-
-html, body { height:100%; }
-
-body{
-  margin:0;
-  font-family:'Source Sans 3',system-ui,sans-serif;
-  background:var(--bg);
-  color:var(--ink);
-}
-
 /* ======================================================
    THEME MODES (keep text readable)
 ====================================================== */
 
 body[data-theme="atlantic"]{
-  --bg:#e9eef1;
-  --panel-bg:#ffffff;
-  --ink:#1c1f22;
-  --ink-soft:#4a4f54;
+  --bg: var(--wl-paper);
+  --panel-bg: #ffffff;
+  --ink: var(--wl-ink);
+  --ink-soft: var(--wl-muted);
 }
 
 body[data-theme="deepsea"]{
-  --bg:var(--deepsea);
-  --panel-bg:rgba(255,255,255,0.98);
-  --ink:#1c1f22;
-  --ink-soft:#2e3338;
+  --bg: var(--wl-paper);
+  --panel-bg: #ffffff;
+  --ink: var(--wl-ink);
+  --ink-soft: var(--wl-muted);
 }
 
 body[data-theme="seagreen"]{
-  --bg:var(--seagreen);
-  --panel-bg:rgba(255,255,255,0.98);
-  --ink:#1c1f22;
-  --ink-soft:#2e3338;
+  --bg: var(--wl-paper);
+  --panel-bg: #ffffff;
+  --ink: var(--wl-ink);
+  --ink-soft: var(--wl-muted);
 }
 
 body[data-theme="bottle"]{
-  --bg:var(--bottle);
-  --panel-bg:rgba(255,255,255,0.98);
-  --ink:#1c1f22;
-  --ink-soft:#2e3338;
+  --bg: var(--wl-paper);
+  --panel-bg: #ffffff;
+  --ink: var(--wl-ink);
+  --ink-soft: var(--wl-muted);
 }
 
 body[data-theme="parchment"]{
-  --bg:var(--parchment);
-  --panel-bg:#ffffff;
-  --ink:#2a2a2a;
-  --ink-soft:#4a4f54;
+  --bg: var(--wl-paper);
+  --panel-bg: #ffffff;
+  --ink: var(--wl-ink);
+  --ink-soft: var(--wl-muted);
 }
 
 /* ======================================================
